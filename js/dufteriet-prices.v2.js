@@ -1,5 +1,5 @@
 (function(){
-  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920d";
+  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920f";
 
   // Normaliser streng: trim, bytt ut fancy bindestreker/whitespace med ASCII
   function norm(s){
