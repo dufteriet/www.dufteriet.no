@@ -1,11 +1,13 @@
 (function(){
-  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json";
+  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920d";
 
-  function fmtKey(str){
-    // Bruk samme normalisering som vi har brukt i nøkler
-    return String(str)
-      .replace(/æ/gi,"ae").replace(/ø/gi,"o").replace(/å/gi,"a")
-      .replace(/[^\w\s-]/g,"").replace(/\s+/g,"-").trim();
+  // Normaliser streng: trim, bytt ut fancy bindestreker/whitespace med ASCII
+  function norm(s){
+    return String(s || "")
+      .replace(/\u00A0/g, " ")                // NBSP -> space
+      .replace(/[\u200B-\u200D\uFEFF]/g, "")  // zero-width
+      .replace(/[\u2010-\u2015\u2212]/g, "-") // alle typer dash -> '-'
+      .trim();
   }
 
   async function loadPrices(){
@@ -15,15 +17,37 @@
   }
 
   function renderPriceBox(el, data){
-    const id = el.getAttribute("data-price-id");
+    let idRaw = el.getAttribute("data-price-id");
+    let id = norm(idRaw);
+
     if(!id){ el.textContent = "Mangler data-price-id"; return; }
 
-    const item = data[id];
-    if(!item || !item.new){ el.textContent = "Ingen priser funnet"; return; }
+    // Debug-hint i Console hvis ID ble endret ved normalisering
+    if (id !== idRaw) {
+      console.warn(`[dufteriet-prices] Normaliserte ID: "${idRaw}" -> "${id}"`);
+    }
+
+    let item = data[id];
+
+    // Fallback: prøv å kollapse dobbelte bindestreker og ekstra spaces hvis noen har sneket seg inn
+    if(!item){
+      const id2 = id.replace(/\s+/g,"-").replace(/-+/g,"-");
+      if(id2 !== id && data[id2]) {
+        console.warn(`[dufteriet-prices] Bruker fallback-nøkkel: "${id}" -> "${id2}"`);
+        id = id2;
+        item = data[id2];
+      }
+    }
+
+    if(!item || !item.new){
+      el.textContent = "Ingen priser funnet";
+      console.warn(`[dufteriet-prices] Fant ikke nøkkel i prisdata: "${id}"`);
+      return;
+    }
 
     const sizes = item.new; // {"1ml": 50, ...}
 
-    // Bygg enkel liste
+    // Bygg liste
     const ul = document.createElement("ul");
     ul.className = "price-list";
     Object.keys(sizes).forEach(k=>{
@@ -32,7 +56,7 @@
       ul.appendChild(li);
     });
 
-    // Bygg select + knapp hvis man vil
+    // Bygg controls
     const controls = document.createElement("div");
     controls.className = "controls";
     const label = document.createElement("label");
@@ -66,7 +90,7 @@
     controls.appendChild(sel);
     controls.appendChild(btn);
 
-    // Pakk inn i enkel layout
+    // Layout
     const wrap = document.createElement("div");
     wrap.className = "buy-card card-like";
     const body = document.createElement("div");
