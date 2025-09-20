@@ -1,38 +1,48 @@
 (function(){
   const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920f";
 
-  // Normaliser streng: trim, bytt ut fancy bindestreker/whitespace med ASCII
+  // Normaliser streng: trim, NBSP -> space, zero-width ut, alle dash -> '-'
   function norm(s){
     return String(s || "")
-      .replace(/\u00A0/g, " ")                // NBSP -> space
-      .replace(/[\u200B-\u200D\uFEFF]/g, "")  // zero-width
-      .replace(/[\u2010-\u2015\u2212]/g, "-") // alle typer dash -> '-'
+      .replace(/\u00A0/g, " ")
+      .replace(/[\u200B-\u200D\uFEFF]/g, "")
+      .replace(/[\u2010-\u2015\u2212]/g, "-")
       .trim();
+  }
+
+  // Lag et indeks-objekt med NORMALISERTE nøkler fra JSON-fila
+  function buildIndex(data){
+    const idx = {};
+    for (const k in data){
+      const nk = norm(k).replace(/\s+/g,"-").replace(/-+/g,"-");
+      idx[nk] = data[k];
+    }
+    return idx;
   }
 
   async function loadPrices(){
     const res = await fetch(JSON_URL, { cache: "no-store" });
     if(!res.ok) throw new Error("Kunne ikke hente prisdata: " + res.status);
-    return await res.json();
+    const raw = await res.json();
+    return buildIndex(raw); // <<< VIKTIG: normaliser nøkler ved innlasting
   }
 
   function renderPriceBox(el, data){
-    let idRaw = el.getAttribute("data-price-id");
+    const idRaw = el.getAttribute("data-price-id");
     let id = norm(idRaw);
-
     if(!id){ el.textContent = "Mangler data-price-id"; return; }
 
-    // Debug-hint i Console hvis ID ble endret ved normalisering
     if (id !== idRaw) {
       console.warn(`[dufteriet-prices] Normaliserte ID: "${idRaw}" -> "${id}"`);
     }
 
+    // Prøv direkte
     let item = data[id];
 
-    // Fallback: prøv å kollapse dobbelte bindestreker og ekstra spaces hvis noen har sneket seg inn
+    // Fallback: klem sammen mellomrom/doble bindestreker
     if(!item){
       const id2 = id.replace(/\s+/g,"-").replace(/-+/g,"-");
-      if(id2 !== id && data[id2]) {
+      if (data[id2]) {
         console.warn(`[dufteriet-prices] Bruker fallback-nøkkel: "${id}" -> "${id2}"`);
         id = id2;
         item = data[id2];
@@ -45,9 +55,8 @@
       return;
     }
 
-    const sizes = item.new; // {"1ml": 50, ...}
-
     // Bygg liste
+    const sizes = item.new;
     const ul = document.createElement("ul");
     ul.className = "price-list";
     Object.keys(sizes).forEach(k=>{
@@ -56,7 +65,7 @@
       ul.appendChild(li);
     });
 
-    // Bygg controls
+    // Controls
     const controls = document.createElement("div");
     controls.className = "controls";
     const label = document.createElement("label");
@@ -120,7 +129,7 @@
 
   async function init(){
     try{
-      const data = await loadPrices();
+      const data = await loadPrices();   // data har nå normaliserte nøkler
       document.querySelectorAll(".price-box").forEach(el => renderPriceBox(el, data));
       console.log("✅ Prisdata lastet");
     }catch(e){
