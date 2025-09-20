@@ -24,7 +24,7 @@
     const res = await fetch(JSON_URL, { cache: "no-store" });
     if(!res.ok) throw new Error("Kunne ikke hente prisdata: " + res.status);
     const raw = await res.json();
-    return buildIndex(raw); // <<< VIKTIG: normaliser nøkler ved innlasting
+    return buildIndex(raw); // <<< normaliser nøkler ved innlasting
   }
 
   function renderPriceBox(el, data){
@@ -36,7 +36,7 @@
       console.warn(`[dufteriet-prices] Normaliserte ID: "${idRaw}" -> "${id}"`);
     }
 
-    // Prøv direkte
+    // Direkte oppslag
     let item = data[id];
 
     // Fallback: klem sammen mellomrom/doble bindestreker
