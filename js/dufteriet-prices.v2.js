@@ -1,5 +1,5 @@
 (function(){
-  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920f";
+  const JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/js/prisdata.json?v=20250920h";
 
   // Normaliser streng: NBSP -> space, fjern zero-width, alle dash -> '-'
   function norm(s){
