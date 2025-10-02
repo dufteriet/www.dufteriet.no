@@ -17,7 +17,7 @@
     const sortSelect = document.getElementById('brandSort');
 
     const MASTER_BRANDS = [
-      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
+      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
     ];
 
     // Ekstra alias for robuste treff (inkl. Goldfield-varianter)
@@ -105,6 +105,7 @@
       "Room 1015": GH+"Y8dQF6L0zI6kLxsu2nKMeBTYg63ro4GIy9h1qtsl.png",
       "Sospiro": GH+"Sospiro_Logo_ZGO_Web.png",
       "Stéphane Humbert Lucas": GH+"ZGO_SHL-777_Logo_51d2a333-9680-48e8-b871-c07bf7ec1d03.jpg",
+      "Thameen": GH+"thameen.png",
       "The Merchant of Venice": GH+"o.1942.jpg",
       "Tom Ford": GH+"tom-ford-logo-png_seeklogo-383930.png",
       "Widian": GH+"1118.jpg",
