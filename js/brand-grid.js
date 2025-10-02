@@ -1,6 +1,10 @@
 /* brand-grid.js */
-(() => {
+window.addEventListener('load', () => {
   'use strict';
+
+  // Bevis/markør i DOM + konsoll
+  console.log('[brand-grid] source=GH 2025-10-02');
+  document.documentElement.setAttribute('data-brand-grid', 'gh-20251002');
 
   function waitForGrid(cb){
     let tries = 0;
@@ -13,6 +17,11 @@
   }
 
   waitForGrid(function(grid){
+    // Init-vakt: unngå dobbel kjøring
+    if (grid.dataset.brandGridInit === '1') return;
+    grid.dataset.brandGridInit = '1';
+    grid.dataset.source = 'gh-20251002';
+
     const controls   = document.getElementById('brandControls');
     const sortSelect = document.getElementById('brandSort');
 
@@ -20,7 +29,7 @@
       "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
     ];
 
-    // Ekstra alias for robuste treff (inkl. Goldfield-varianter)
+    // Alias for robuste treff
     const ALIAS = {
       "Parfums De Marly":"Parfums de Marly",
       "Stèphane Humbert Lucas":"Stéphane Humbert Lucas",
@@ -31,9 +40,10 @@
       "Les Indémodables":"Les Indemodables",
       "Marc Antoine Barrois":"Marc-Antoine Barrois",
       "Goldfield&Banks":"Goldfield & Banks",
-      "Goldfield and Banks":"Goldfield & Banks"
-      "Thameen London":"Thameen"
-  
+      "Goldfield and Banks":"Goldfield & Banks",
+      "Thameen London":"Thameen",
+      "Roja Parfums":"Roja London",
+      "Roja Dove":"Roja London"
     };
     function canon(n){ if(!n) return ""; n = n.trim(); return ALIAS[n] || n; }
 
@@ -47,7 +57,6 @@
     const SEEN_LABEL_ORIGINAL = {};
 
     // ====== LOGOS (jsDelivr fra repoet ditt) ======
-    // Base: https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/logos/<FIL>
     const GH = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/logos/";
     const LOGOS = {
       "4711": GH+"4711EchtKoelnischWasserPin_v2.png",
@@ -351,4 +360,4 @@
       }
     });
   });
-})();
+});
