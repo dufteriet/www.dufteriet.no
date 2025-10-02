@@ -32,6 +32,8 @@
       "Marc Antoine Barrois":"Marc-Antoine Barrois",
       "Goldfield&Banks":"Goldfield & Banks",
       "Goldfield and Banks":"Goldfield & Banks"
+      "Thameen London":"Thameen"
+  
     };
     function canon(n){ if(!n) return ""; n = n.trim(); return ALIAS[n] || n; }
 
