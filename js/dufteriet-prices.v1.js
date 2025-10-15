@@ -1,4 +1,3 @@
-<script>
 ;(()=>{
 
 // ---- sett opp en gang pr side ----
@@ -9,7 +8,7 @@ if(!document.getElementById(CSS_ID)){
   .buy-card{margin:0 0 12px;overflow:hidden}
   .buy-body{display:grid;grid-template-columns:1fr auto;gap:16px 20px;align-items:center;padding:14px}
   .price-list{list-style:none;margin:0;padding:0}
-  .price-row{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px dashed #eee}
+  .price-row{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px dashed #eee}
   .price-row:last-child{border-bottom:0}
   .price-size{font-weight:600}
   .price-old{color:#888;text-decoration:line-through;margin-right:10px}
@@ -21,8 +20,7 @@ if(!document.getElementById(CSS_ID)){
   .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-self:end}
   .controls label{margin-right:6px}
   .buy-footer{grid-column:1 / -1;padding:12px 14px 14px;border-top:1px solid #e9e9e9;display:flex;justify-content:center;background:#fafafa;border-radius:0 0 12px 12px}
-  .cart-btn{display:inline-block;padding:10px 20px;background:#111;border:1px solid #111;border-radius:10px;font-weight:700;color:#fff;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.15);transition:all .2s}
-  .cart-btn:hover{background:#333;border-color:#333}
+  .cart-btn{display:inline-block;padding:10px 20px;background:#f5f5f5;border:1px solid #ccc;border-radius:6px;font-weight:bold;color:#333;text-decoration:none}
   @media (max-width:720px){.buy-body{grid-template-columns:1fr;align-items:start}.controls{justify-self:start}}
 
   /* loader */
@@ -36,59 +34,31 @@ if(!document.getElementById(CSS_ID)){
 }
 
 // ---- hjelpefunksjoner ----
-const STD_ORDER = ["1ml","2ml","3ml","5ml","10ml"];
+const order = ["1ml","2ml","3ml","5ml","10ml"];
 const q = (sel,root=document)=>root.querySelector(sel);
 const c = (tag,cls)=>{const el=document.createElement(tag); if(cls) el.className=cls; return el;};
-
-function niceLabel(key){
-  // "12x1ml" -> "12 × 1 ml", "2ml" -> "2 ml"
-  let k = key.trim();
-  k = k.replace(/\s+/g,'');
-  const m = /^(\d+)\s*x\s*(\d+)\s*ml$/i.exec(k);
-  if(m) return `${parseInt(m[1],10)} × ${parseInt(m[2],10)} ml`;
-  return k.replace(/ml\b/i,' ml');
-}
-
-function parseCountAndMl(key){
-  // Returner {count, ml} for sortering. Fallback til Infinity.
-  const k = key.replace(/\s+/g,'');
-  let m = /^(\d+)\s*x\s*(\d+)\s*ml$/i.exec(k);
-  if(m) return {count:parseInt(m[1],10), ml:parseInt(m[2],10)};
-  m = /^(\d+)\s*ml$/i.exec(k);
-  if(m) return {count:1, ml:parseInt(m[1],10)};
-  return {count:9999, ml:9999};
-}
-
-// Ny versjon: støtter både standard-nøkler OG bundle-nøkler som "12x1ml"
 function computeRows(data){
-  const NEW = (data.new || {});
-  const OLD = (data.old || {});
-  let keys = STD_ORDER.filter(k => NEW[k] != null);
-
-  if(keys.length === 0){
-    keys = Object.keys(NEW).sort((a,b)=>{
-      const A = parseCountAndMl(a), B = parseCountAndMl(b);
-      if(A.count !== B.count) return A.count - B.count; // 12x før 24x
-      if(A.ml !== B.ml) return A.ml - B.ml;             // 1 ml før 2 ml
-      return a.localeCompare(b, 'nb', {numeric:true, sensitivity:'base'});
-    });
-  }
-
-  return keys.map(k=>{
-    const newP = Number(NEW[k]);
-    const oldP = (OLD[k] != null) ? Number(OLD[k]) : null;
-    const disc = (oldP!=null && oldP>newP) ? Math.round(((oldP-newP)/oldP)*100) : 0;
-    return { key:k, label:niceLabel(k), newP, oldP, disc };
+  const rows=[]; const NEW=(data.new||{}), OLD=(data.old||{});
+  order.forEach(k=>{
+    if(NEW[k]!=null){
+      const newP=Number(NEW[k]);
+      const oldP=(OLD[k]!=null)?Number(OLD[k]):null;
+      const disc=(oldP!=null && oldP>newP)?Math.round(((oldP-newP)/oldP)*100):0;
+      rows.push({key:k,label:k.replace('ml',' ml'),newP,oldP,disc});
+    }
   });
+  return rows;
 }
 
 function renderBox(host, items, productName){
+  // bygg kortet
   host.innerHTML="";
   const card=c("div","buy-card card-like");
   const body=c("div","buy-body");
   const left=c("div","");
   const ul=c("ul","price-list");
 
+  // rader
   items.forEach(it=>{
     const isDeal = it.oldP!=null && it.oldP>it.newP;
     if(isDeal){
@@ -112,7 +82,7 @@ function renderBox(host, items, productName){
   // controls
   const controls=c("div","controls");
   const label=c("label",""); const selId="sel-"+Math.random().toString(36).slice(2,9);
-  label.setAttribute("for",selId); label.textContent="Velg variant:";
+  label.setAttribute("for",selId); label.textContent="Velg størrelse:";
   const sel=c("select",""); sel.id=selId;
   items.forEach(it=>{
     const opt=c("option","");
@@ -120,7 +90,7 @@ function renderBox(host, items, productName){
     opt.text =`${it.label} - ${it.newP} kr`;
     sel.add(opt);
   });
-  const btn=c("button","cart-btn"); btn.type="button"; btn.textContent="Legg i handlekurv";
+  const btn=c("button",""); btn.type="button"; btn.textContent="Legg til";
   btn.addEventListener("click",()=>{
     const val=sel.value; if(!val) return;
     const [size,priceStr]=val.split("|"); const price=parseFloat(priceStr);
@@ -196,4 +166,3 @@ async function initBox(host){
 document.querySelectorAll('.price-box').forEach(initBox);
 
 })();
-</script>
