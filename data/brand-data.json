@@ -3,7 +3,7 @@
   "logoBase": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/logos/",
   "master": [
     "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf",
-    "BDK Parfums","Boadicea The Victorious","Caron","Chanel","Chapel Factory",
+    "BDK Parfums","Boadicea The Victorious","Byredo","Caron","Chanel","Chapel Factory",
     "Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior",
     "Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi",
     "French Avenue","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès",
@@ -40,6 +40,7 @@
     "Armaf": "logo-footer.png",
     "BDK Parfums": "bdk_parfum.png",
     "Boadicea The Victorious": "logo-2.png",
+    "Byredo": "byredo.png",
     "Caron": "o.22.jpg",
     "Chanel": "imgbin-chanel-logo-fashion-clothing-gucci-logo-vRFCX7PAEqBMCLhgdaspWe3md.jpg",
     "Chapel Factory": "chapel-factory-img.jpg",
