@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
     const sortSelect = document.getElementById('brandSort');
 
     const MASTER_BRANDS = [
-      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
+      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Byredo","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
     ];
 
     // Alias for robuste treff
@@ -68,6 +68,7 @@ window.addEventListener('load', () => {
       "Armaf": GH+"logo-footer.png",
       "BDK Parfums": GH+"bdk_parfum.png",
       "Boadicea The Victorious": GH+"logo-2.png",
+      "Byredo": GH+"byredo.png",
       "Caron": GH+"o.22.jpg",
       "Chanel": GH+"imgbin-chanel-logo-fashion-clothing-gucci-logo-vRFCX7PAEqBMCLhgdaspWe3md.jpg",
       "Chapel Factory": GH+"chapel-factory-img.jpg",
