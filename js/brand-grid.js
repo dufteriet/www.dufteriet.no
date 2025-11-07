@@ -26,7 +26,13 @@ window.addEventListener('load', () => {
     const sortSelect = document.getElementById('brandSort');
 
     const MASTER_BRANDS = [
-      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Byredo","Chanel","Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo","Fragrance One","Francesca Bianchi","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake","Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois","M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly","Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian","Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
+      "4711","Abercrombie & Fitch","Adi Ale Van","Al Haramain","Amouage","Argos","Armaf","BDK Parfums","Boadicea The Victorious","Byredo","Chanel",
+      "Chapel Factory","Christian Provenzano Parfums","City Rhythm","Clive Christian","Creed","Dior","Electimuss","Essential Parfums","Ex Nihilo",
+      "Fragrance One","Francesca Bianchi","Giardini Di Toscana","Giorgio Armani","Gisada","Goldfield & Banks","Guerlain","Hermès","Houbigant","Hugo Boss","Initio","Issey Miyake",
+      "Kilian","Les Indemodables","Lorenzo Pazzaglia","Louis Vuitton","Loumari","Maison Francis Kurkdjian","Maison Margiela","Marc-Antoine Barrois",
+      "M.Micallef","Memo","Mind Games","Mith","Montblanc","Nasomatto","Nishane","Nobile 1942","Ormonde Jayne","Orto Parisi","Pana Dora","Parfums de Marly",
+      "Paris Corner","Rogue Perfumery","Roja London","Room 1015","Sospiro","Stéphane Humbert Lucas","Thameen","The Merchant of Venice","Tom Ford","Widian",
+      "Xerjoff","Yves Saint Laurent","Zimaya","Zoologist"
     ];
 
     // Alias for robuste treff
@@ -82,6 +88,7 @@ window.addEventListener('load', () => {
       "Ex Nihilo": GH+"Ex-nihilo-1_460x.png",
       "Fragrance One": GH+"Logo_Txt_480x120px_White_BG.png",
       "Francesca Bianchi": GH+"Capture-removebg-preview-2023-05-17T145756.849_be106e4f-507c-4045-b3e6-14610c086878.png",
+      "Giardini Di Toscana": GH+"giardini-di-toscana.png",
       "Giorgio Armani": GH+"giorgio-armani-logo-png-transparent.png",
       "Gisada": GH+"Gisada-logo.png",
       "Goldfield & Banks": GH+"Goldfield&Banks.png",
