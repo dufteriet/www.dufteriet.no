@@ -34,7 +34,7 @@ if(!document.getElementById(CSS_ID)){
 }
 
 // ---- hjelpefunksjoner ----
-const order = ["1ml","2ml","3ml","5ml","10ml"];
+const order = ["1ml","2ml","3ml","5ml","10ml","15ml","20ml","30ml","50ml","100ml"];
 const q = (sel,root=document)=>root.querySelector(sel);
 const c = (tag,cls)=>{const el=document.createElement(tag); if(cls) el.className=cls; return el;};
 function computeRows(data){
