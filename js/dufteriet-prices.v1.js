@@ -1,6 +1,18 @@
 ;(()=>{
+/**
+ * Dufteriet – prices v1 (patched)
+ * Fix:
+ *  - Henter prisdata via stabil URL (m=0 + absolutt URL) for å unngå Blogger-mobil/redirect-trøbbel i Google-testere
+ *  - Har fallback: prøver JSON-endpoint (hvis du legger prisdata.json i repo) -> ellers Blogger-side
+ *  - Cache-bust + timeout
+ */
 
-// ---- sett opp en gang pr side ----
+/** ========= KONFIG ========= **/
+const PRISDATA_JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/data/prisdata.json"; // (valgfri) legg filen her for 100% stabil fetch
+const PRISDATA_HTML_URL = "https://www.dufteriet.no/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
+const FETCH_TIMEOUT_MS  = 12000;
+
+/** ========= CSS (en gang per side) ========= **/
 const CSS_ID = "dufteriet-prices-css";
 if(!document.getElementById(CSS_ID)){
   const css = `
@@ -33,12 +45,13 @@ if(!document.getElementById(CSS_ID)){
   document.head.appendChild(s);
 }
 
-// ---- hjelpefunksjoner ----
+/** ========= HJELP ========= **/
 const order = ["1ml","2ml","3ml","5ml","10ml","15ml","20ml","30ml","50ml","100ml"];
-const q = (sel,root=document)=>root.querySelector(sel);
 const c = (tag,cls)=>{const el=document.createElement(tag); if(cls) el.className=cls; return el;};
+
 function computeRows(data){
-  const rows=[]; const NEW=(data.new||{}), OLD=(data.old||{});
+  const rows=[];
+  const NEW=(data.new||{}), OLD=(data.old||{});
   order.forEach(k=>{
     if(NEW[k]!=null){
       const newP=Number(NEW[k]);
@@ -51,14 +64,12 @@ function computeRows(data){
 }
 
 function renderBox(host, items, productName){
-  // bygg kortet
   host.innerHTML="";
   const card=c("div","buy-card card-like");
   const body=c("div","buy-body");
   const left=c("div","");
   const ul=c("ul","price-list");
 
-  // rader
   items.forEach(it=>{
     const isDeal = it.oldP!=null && it.oldP>it.newP;
     if(isDeal){
@@ -68,32 +79,44 @@ function renderBox(host, items, productName){
       const oldEl=c("span","price-old"); oldEl.textContent=it.oldP+" kr";
       const newEl=c("span","price-new"); newEl.textContent=it.newP+" kr";
       right.appendChild(oldEl); right.appendChild(newEl);
-      if(it.disc>0){ const save=c("span","price-save"); save.textContent=`-${it.disc}%`; right.appendChild(save); }
+      if(it.disc>0){
+        const save=c("span","price-save");
+        save.textContent=`-${it.disc}%`;
+        right.appendChild(save);
+      }
       li.appendChild(leftLbl); li.appendChild(right); ul.appendChild(li);
     } else {
       const li=c("li","price-plain");
-      const line=c("span",""); line.textContent = `${it.label} - ${it.newP} kr`;
+      const line=c("span","");
+      line.textContent = `${it.label} - ${it.newP} kr`;
       li.appendChild(line); ul.appendChild(li);
     }
   });
 
   left.appendChild(ul);
 
-  // controls
   const controls=c("div","controls");
-  const label=c("label",""); const selId="sel-"+Math.random().toString(36).slice(2,9);
-  label.setAttribute("for",selId); label.textContent="Velg størrelse:";
-  const sel=c("select",""); sel.id=selId;
+  const label=c("label","");
+  const selId="sel-"+Math.random().toString(36).slice(2,9);
+  label.setAttribute("for",selId);
+  label.textContent="Velg størrelse:";
+
+  const sel=c("select","");
+  sel.id=selId;
   items.forEach(it=>{
     const opt=c("option","");
     opt.value=`${it.label}|${it.newP}`;
     opt.text =`${it.label} - ${it.newP} kr`;
     sel.add(opt);
   });
-  const btn=c("button",""); btn.type="button"; btn.textContent="Legg til";
+
+  const btn=c("button","");
+  btn.type="button";
+  btn.textContent="Legg til";
   btn.addEventListener("click",()=>{
     const val=sel.value; if(!val) return;
-    const [size,priceStr]=val.split("|"); const price=parseFloat(priceStr);
+    const [size,priceStr]=val.split("|");
+    const price=parseFloat(priceStr);
     const cart=JSON.parse(localStorage.getItem("cart"))||[];
     cart.push({item:productName,size:size,price:price});
     localStorage.setItem("cart",JSON.stringify(cart));
@@ -103,10 +126,14 @@ function renderBox(host, items, productName){
   controls.appendChild(label); controls.appendChild(sel); controls.appendChild(btn);
 
   const footer=c("div","buy-footer");
-  const a=c("a","cart-btn"); a.href="https://www.dufteriet.no/p/fork-bestilling.html"; a.textContent="🛒 Vis handlekurv";
+  const a=c("a","cart-btn");
+  a.href="https://www.dufteriet.no/p/fork-bestilling.html";
+  a.textContent="🛒 Vis handlekurv";
   footer.appendChild(a);
 
-  body.appendChild(left); body.appendChild(controls); body.appendChild(footer);
+  body.appendChild(left);
+  body.appendChild(controls);
+  body.appendChild(footer);
   card.appendChild(body);
   host.appendChild(card);
 }
@@ -127,27 +154,74 @@ function renderSkeleton(host){
   `;
 }
 
-// ---- hovedløp ----
+/** ========= FETCH HELPERS ========= **/
+function withTimeout(promise, ms){
+  const ctrl = new AbortController();
+  const t = setTimeout(()=>ctrl.abort(), ms);
+  return {
+    promise: (async()=>{
+      try { return await promise(ctrl.signal); }
+      finally { clearTimeout(t); }
+    })(),
+    signal: ctrl.signal
+  };
+}
+
+async function fetchText(url){
+  const u = url + (url.includes("?") ? "&" : "?") + "cb=" + Date.now();
+  const { promise } = withTimeout(async(signal)=>{
+    const res = await fetch(u, { credentials:"omit", cache:"no-store", signal });
+    if(!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    return await res.text();
+  }, FETCH_TIMEOUT_MS);
+  return await promise;
+}
+
+async function fetchJson(url){
+  const u = url + (url.includes("?") ? "&" : "?") + "cb=" + Date.now();
+  const { promise } = withTimeout(async(signal)=>{
+    const res = await fetch(u, { cache:"no-store", signal });
+    if(!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    return await res.json();
+  }, FETCH_TIMEOUT_MS);
+  return await promise;
+}
+
+function parsePrisdataFromHtml(html){
+  const doc = new DOMParser().parseFromString(html,'text/html');
+  const node = doc.querySelector('#prisdata');
+  if(!node) throw new Error("Fant ikke #prisdata");
+  let raw = node.textContent || '';
+  raw = raw
+    .replace(/\/\*[\s\S]*?\*\//g,'')     // /* ... */
+    .replace(/^\s*\/\/.*$/gm,'')        // //...
+    .replace(/,\s*(?=[}\]])/g,'');      // hengende komma
+  return JSON.parse(raw);
+}
+
+/** ========= HOVED ========= **/
+async function loadPrisdata(){
+  // 1) Prøv ren JSON (hvis/etter at du legger den inn i repo)
+  try{
+    return await fetchJson(PRISDATA_JSON_URL);
+  }catch(e){
+    // fall videre
+  }
+
+  // 2) Fallback: Blogger-side, men med m=0 og absolutt URL (for å unngå mobil/redirect issues)
+  const html = await fetchText(PRISDATA_HTML_URL);
+  return parsePrisdataFromHtml(html);
+}
+
 async function initBox(host){
   const priceId = host.getAttribute("data-price-id");
   const productName = host.getAttribute("data-product-name") || priceId || "Produkt";
-
   if(!priceId){ host.textContent="Mangler data-price-id"; return; }
 
   renderSkeleton(host);
 
   try{
-    const res = await fetch('/p/prisdata.html',{credentials:'omit'});
-    if(!res.ok) throw new Error("Prisdata utilgjengelig");
-    const html = await res.text();
-    const doc = new DOMParser().parseFromString(html,'text/html');
-    const node = doc.querySelector('#prisdata');
-    if(!node) throw new Error("Fant ikke #prisdata");
-
-    let raw = node.textContent || '';
-    // tillat kommentarer og hengende komma i JSON
-    raw = raw.replace(/\/\*[\s\S]*?\*\//g,'').replace(/^\s*\/\/.*$/gm,'').replace(/,\s*(?=[}\]])/g,'');
-    const data = JSON.parse(raw);
+    const data = await loadPrisdata();
 
     const entry = data[priceId];
     if(!entry){ host.innerHTML="<em>Pris ikke tilgjengelig.</em>"; return; }
@@ -157,12 +231,11 @@ async function initBox(host){
 
     renderBox(host, items, productName);
   }catch(e){
-    console.error(e);
+    console.error("Pris-feil:", e);
     host.innerHTML="<em>Kunne ikke hente priser akkurat nå.</em>";
   }
 }
 
-// start for alle bokser
 document.querySelectorAll('.price-box').forEach(initBox);
 
-})();
+})(); 
