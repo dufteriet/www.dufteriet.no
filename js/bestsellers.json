@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-30T13:12:36.495Z",
+  "updatedAt": "2026-01-31T03:03:03.135Z",
   "count": 238,
   "items": [
     {
@@ -53,38 +53,38 @@
     },
     {
       "rank": 8,
+      "name": "Guerlain Herbes Troublantes",
+      "url": "https://www.dufteriet.no/2025/11/guerlain-herbes-troublantes.html",
+      "sales": 5,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---HERBES-TROUBLANTES.jpg"
+    },
+    {
+      "rank": 9,
       "name": "Guerlain Spirituese Double Vanille",
       "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Guerlain Tobacco Honey",
       "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Louis Vuitton Afternoon Swim",
       "url": "https://www.dufteriet.no/2025/12/louis-vuitton-afternoon-swim.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---afternoon-swim.webp"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Argos Triumph Of Bacchus Extrait",
       "url": "https://www.dufteriet.no/2025/08/argos-triumph-of-bacchus-extrait.html",
       "sales": 4,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-ARGOS---TRIUMPH-OF-BACCHUS-EXTRAIT-v2.webp"
-    },
-    {
-      "rank": 12,
-      "name": "Guerlain Herbes Troublantes",
-      "url": "https://www.dufteriet.no/2025/11/guerlain-herbes-troublantes.html",
-      "sales": 4,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---HERBES-TROUBLANTES.jpg"
     },
     {
       "rank": 13,
@@ -102,38 +102,38 @@
     },
     {
       "rank": 15,
+      "name": "Les Indemodables Ambre Supreme",
+      "url": "https://www.dufteriet.no/2025/08/les-indemodables-ambre-supreme.html",
+      "sales": 4,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LES-INDEMODABLES---AMBRE-SUPREME.jpg"
+    },
+    {
+      "rank": 16,
       "name": "Louis Vuitton Météore",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-meteore.html",
       "sales": 4,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Meteore.webp"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Louis Vuitton Pacific Chill",
       "url": "https://www.dufteriet.no/2025/09/louis-vuitton-pacific-chill.html",
       "sales": 4,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---PACIFIC-CHILL.avif"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "Dior Leather Oud",
       "url": "https://www.dufteriet.no/2025/11/dior-leather-oud-2018.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/d-dior---leather-oud-v2.jpg"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Guerlain Peche Mirage",
       "url": "https://www.dufteriet.no/2025/12/guerlain-peche-mirage.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---peche-mirage.jpg"
-    },
-    {
-      "rank": 19,
-      "name": "Les Indemodables Ambre Supreme",
-      "url": "https://www.dufteriet.no/2025/08/les-indemodables-ambre-supreme.html",
-      "sales": 3,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LES-INDEMODABLES---AMBRE-SUPREME.jpg"
     },
     {
       "rank": 20,
@@ -1721,24 +1721,24 @@
     },
     {
       "rank": 8,
+      "name": "Guerlain Herbes Troublantes",
+      "url": "https://www.dufteriet.no/2025/11/guerlain-herbes-troublantes.html",
+      "sales": 5,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---HERBES-TROUBLANTES.jpg"
+    },
+    {
+      "rank": 9,
       "name": "Guerlain Spirituese Double Vanille",
       "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Guerlain Tobacco Honey",
       "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
-    },
-    {
-      "rank": 10,
-      "name": "Louis Vuitton Afternoon Swim",
-      "url": "https://www.dufteriet.no/2025/12/louis-vuitton-afternoon-swim.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---afternoon-swim.webp"
     }
   ]
 }
