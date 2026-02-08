@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-07T03:03:05.306Z",
+  "updatedAt": "2026-02-08T03:03:02.126Z",
   "count": 238,
   "items": [
     {
@@ -13,7 +13,7 @@
       "rank": 2,
       "name": "Louis Vuitton Imagination",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-imagination.html",
-      "sales": 10,
+      "sales": 11,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Imagination.jpg"
     },
     {
@@ -46,45 +46,45 @@
     },
     {
       "rank": 7,
+      "name": "Guerlain Spirituese Double Vanille",
+      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
+    },
+    {
+      "rank": 8,
+      "name": "Guerlain Tobacco Honey",
+      "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
+    },
+    {
+      "rank": 9,
       "name": "Louis Vuitton Afternoon Swim",
       "url": "https://www.dufteriet.no/2025/12/louis-vuitton-afternoon-swim.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---afternoon-swim.webp"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Louis Vuitton Ombre Nomade",
       "url": "https://www.dufteriet.no/2025/09/louis-vuitton-ombre-nomade.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---OMBRE-NOMADE.avif"
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Bvlgari Tygar",
       "url": "https://www.dufteriet.no/2025/12/bvlgari-tygar.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BVLGARI---TYGAR.jpg"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "Guerlain Neroli Plein Sud",
       "url": "https://www.dufteriet.no/2025/11/guerlain-neroli-plein-sud.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---NEROLI-PLEIN-SUD.jpg"
-    },
-    {
-      "rank": 11,
-      "name": "Guerlain Spirituese Double Vanille",
-      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
-    },
-    {
-      "rank": 12,
-      "name": "Guerlain Tobacco Honey",
-      "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
     },
     {
       "rank": 13,
@@ -1681,7 +1681,7 @@
       "rank": 2,
       "name": "Louis Vuitton Imagination",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-imagination.html",
-      "sales": 10,
+      "sales": 11,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Imagination.jpg"
     },
     {
@@ -1714,31 +1714,31 @@
     },
     {
       "rank": 7,
+      "name": "Guerlain Spirituese Double Vanille",
+      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
+    },
+    {
+      "rank": 8,
+      "name": "Guerlain Tobacco Honey",
+      "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
+    },
+    {
+      "rank": 9,
       "name": "Louis Vuitton Afternoon Swim",
       "url": "https://www.dufteriet.no/2025/12/louis-vuitton-afternoon-swim.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---afternoon-swim.webp"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Louis Vuitton Ombre Nomade",
       "url": "https://www.dufteriet.no/2025/09/louis-vuitton-ombre-nomade.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---OMBRE-NOMADE.avif"
-    },
-    {
-      "rank": 9,
-      "name": "Bvlgari Tygar",
-      "url": "https://www.dufteriet.no/2025/12/bvlgari-tygar.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BVLGARI---TYGAR.jpg"
-    },
-    {
-      "rank": 10,
-      "name": "Guerlain Neroli Plein Sud",
-      "url": "https://www.dufteriet.no/2025/11/guerlain-neroli-plein-sud.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---NEROLI-PLEIN-SUD.jpg"
     }
   ]
 }
