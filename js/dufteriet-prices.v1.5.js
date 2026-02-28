@@ -157,15 +157,15 @@ function renderBox(host, items, productName, priceId, taxMode){
     const cart = getCart();
 
     // VIKTIG: legg med priceId + taxMode, ellers kan checkout ikke skille regime
-    const line = {
-      item: productName,
-      size: size,
-      qty: 1,
-      price: price,            // (din eksisterende checkout tolker dette som linjepris)
-      url: productUrl,
-      priceId: String(priceId || ""),
-      taxMode: (taxMode === "margin" ? "margin" : "standard")
-    };
+const line = {
+  item: productName,
+  size: size,
+  qty: 1,
+  price: price,            // (din eksisterende checkout tolker dette som linjepris)
+  url: productUrl,
+  priceId: String(priceId || ""),
+  taxMode: (String(taxMode).trim().toLowerCase() === "margin" ? "margin" : "standard")
+};
 
     addOrIncrement(cart, line);
     setCart(cart);
@@ -276,8 +276,12 @@ async function initBox(host){
     const items = computeRows(entry);
     if(!items.length){ host.innerHTML="<em>Ingen priser.</em>"; return; }
 
-    const taxMode = (entry && entry.taxMode) ? entry.taxMode : "standard";
-
+const taxMode =
+  String((entry && entry.taxMode) ? entry.taxMode : "")
+    .trim()
+    .toLowerCase() === "margin"
+  ? "margin"
+  : "standard";
     renderBox(host, items, productName, priceId, taxMode);
   }catch(e){
     console.error("Pris-feil:", e);
