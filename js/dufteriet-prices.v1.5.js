@@ -5,15 +5,11 @@
  *  - Henter prisdata via stabil URL (m=0 + absolutt URL) for å unngå Blogger-mobil/redirect-trøbbel i Google-testere
  *  - Har fallback: prøver JSON-endpoint (hvis du legger prisdata.json i repo) -> ellers Blogger-side
  *  - Cache-bust + timeout
- *
- * NY FIX:
- *  - Legger priceId + taxMode i localStorage-cart-linjene, slik at checkout kan skille STANDARD vs MARGIN
- *  - Slår sammen like linjer (samme priceId + størrelse) i qty
  */
 
 /** ========= KONFIG ========= **/
-const PRISDATA_JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/data/prisdata.json";
-const PRISDATA_HTML_URL = "https://www.dufteriet.no/p/prisdata.html?m=0";
+const PRISDATA_JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/data/prisdata.json"; // (valgfri) legg filen her for 100% stabil fetch
+const PRISDATA_HTML_URL = "https://www.dufteriet.no/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
 const FETCH_TIMEOUT_MS  = 12000;
 
 /** ========= CSS (en gang per side) ========= **/
@@ -67,32 +63,7 @@ function computeRows(data){
   return rows;
 }
 
-function getCart(){
-  try{ return JSON.parse(localStorage.getItem("cart")) || []; }
-  catch(e){ return []; }
-}
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart || []));
-}
-function addOrIncrement(cart, line){
-  // Slå sammen like linjer: samme priceId + samme størrelse
-  const idx = cart.findIndex(x =>
-    String(x.priceId || "") === String(line.priceId || "") &&
-    String(x.size || "") === String(line.size || "")
-  );
-  if(idx >= 0){
-    const prevQty = Number(cart[idx].qty || 1);
-    cart[idx].qty = prevQty + Number(line.qty || 1);
-    // price er linjepris i din checkout i dag (ikke enhetspris).
-    // Når vi øker qty, må vi også øke total linjepris tilsvarende:
-    const prevPrice = Number(cart[idx].price || 0);
-    cart[idx].price = prevPrice + Number(line.price || 0);
-  } else {
-    cart.push(line);
-  }
-}
-
-function renderBox(host, items, productName, priceId, taxMode){
+function renderBox(host, items, productName){
   host.innerHTML="";
   const card=c("div","buy-card card-like");
   const body=c("div","buy-body");
@@ -143,35 +114,23 @@ function renderBox(host, items, productName, priceId, taxMode){
   btn.type="button";
   btn.textContent="Legg til";
   btn.addEventListener("click",()=>{
-    const val = sel.value;
-    if(!val) return;
+  const val = sel.value;
+  if(!val) return;
 
-    const [size, priceStr] = val.split("|");
-    const price = parseFloat(priceStr);
+  const [size, priceStr] = val.split("|");
+  const price = parseFloat(priceStr);
 
-    const productUrl =
-      host.getAttribute("data-product-url") ||
-      document.querySelector('link[rel="canonical"]')?.href ||
-      (location.origin + location.pathname);
+  const productUrl =
+    host.getAttribute("data-product-url") ||
+    document.querySelector('link[rel="canonical"]')?.href ||
+    (location.origin + location.pathname);
 
-    const cart = getCart();
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push({ item: productName, size: size, qty: 1, price: price, url: productUrl });
+  localStorage.setItem("cart", JSON.stringify(cart));
 
-    // VIKTIG: legg med priceId + taxMode, ellers kan checkout ikke skille regime
-const line = {
-  item: productName,
-  size: size,
-  qty: 1,
-  price: price,            // (din eksisterende checkout tolker dette som linjepris)
-  url: productUrl,
-  priceId: String(priceId || ""),
-  taxMode: (String(taxMode).trim().toLowerCase() === "margin" ? "margin" : "standard")
-};
-
-    addOrIncrement(cart, line);
-    setCart(cart);
-
-    alert(`${productName} (${size}, ${price} kr) ble lagt til i handlekurven!`);
-  });
+  alert(`${productName} (${size}, ${price} kr) ble lagt til i handlekurven!`);
+});
 
   controls.appendChild(label); controls.appendChild(sel); controls.appendChild(btn);
 
@@ -251,11 +210,14 @@ function parsePrisdataFromHtml(html){
 
 /** ========= HOVED ========= **/
 async function loadPrisdata(){
+  // 1) Prøv ren JSON (hvis/etter at du legger den inn i repo)
   try{
     return await fetchJson(PRISDATA_JSON_URL);
   }catch(e){
     // fall videre
   }
+
+  // 2) Fallback: Blogger-side, men med m=0 og absolutt URL (for å unngå mobil/redirect issues)
   const html = await fetchText(PRISDATA_HTML_URL);
   return parsePrisdataFromHtml(html);
 }
@@ -276,13 +238,7 @@ async function initBox(host){
     const items = computeRows(entry);
     if(!items.length){ host.innerHTML="<em>Ingen priser.</em>"; return; }
 
-const taxMode =
-  String((entry && entry.taxMode) ? entry.taxMode : "")
-    .trim()
-    .toLowerCase() === "margin"
-  ? "margin"
-  : "standard";
-    renderBox(host, items, productName, priceId, taxMode);
+    renderBox(host, items, productName);
   }catch(e){
     console.error("Pris-feil:", e);
     host.innerHTML="<em>Kunne ikke hente priser akkurat nå.</em>";
@@ -291,4 +247,4 @@ const taxMode =
 
 document.querySelectorAll('.price-box').forEach(initBox);
 
-})();
+})(); 
