@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-01T03:03:03.483Z",
+  "updatedAt": "2026-03-02T03:04:00.872Z",
   "count": 241,
   "items": [
     {
@@ -756,7 +756,7 @@
       "name": "Zoologist Penguin",
       "url": "https://www.dufteriet.no/2025/08/zoologist-penguin.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/Z-ZOOLOGIST---PENGUIN-v2.webp"
+      "img": null
     },
     {
       "rank": 109,
@@ -770,7 +770,7 @@
       "name": "4711 Remix Cologne Lavender Edition",
       "url": "https://www.dufteriet.no/2025/08/4711-remix-cologne-edition-2019.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/4711---Remix-Cologne-Lavender.jpg"
+      "img": null
     },
     {
       "rank": 111,
@@ -889,7 +889,7 @@
       "name": "City Rhythm Barcelona",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-barcelona.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---BARCELONA.jpeg"
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/c-city-rhythm-barcelona.jpg"
     },
     {
       "rank": 128,
@@ -1211,7 +1211,7 @@
       "name": "Nishane Ege",
       "url": "https://www.dufteriet.no/2025/08/nishane-ege.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE---EGE.jpg"
+      "img": null
     },
     {
       "rank": 174,
@@ -1330,7 +1330,7 @@
       "name": "Parfums de Marly Pegasus",
       "url": "https://www.dufteriet.no/2025/08/parfums-de-marly-pegasus.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PARFUMS-DE-MARLY---PEGASUS.jpg"
+      "img": null
     },
     {
       "rank": 191,
@@ -1344,7 +1344,7 @@
       "name": "Paris Corner North Stag Expressions IV QUATRE",
       "url": "https://www.dufteriet.no/2025/08/paris-corner-north-stag-expressions-iv.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PARIS-CORNER---NORTH-STAG-EXPRESSIONS-IV-QUATRE.jpg"
+      "img": null
     },
     {
       "rank": 193,
@@ -1358,7 +1358,7 @@
       "name": "Rogue Perfumery Fougere L'Aube",
       "url": "https://www.dufteriet.no/2025/08/rogue-perfumery-fougere-laube.html",
       "sales": 0,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/R-ROGUE-PERFUMERY---FOUGERE-L&#39;AUBE.png"
+      "img": "https://www.dufteriet.no/pictures/dufteriet-logo.jpg"
     },
     {
       "rank": 195,
