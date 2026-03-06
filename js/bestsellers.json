@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-03-05T03:03:05.473Z",
+  "updatedAt": "2026-03-06T03:03:02.457Z",
   "count": 245,
   "items": [
     {
       "rank": 1,
       "name": "Louis Vuitton Imagination",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-imagination.html",
-      "sales": 15,
+      "sales": 17,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Imagination.jpg"
     },
     {
@@ -53,80 +53,80 @@
     },
     {
       "rank": 8,
+      "name": "Byredo Bal D'Afrique Absolu",
+      "url": "https://www.dufteriet.no/2025/11/byredo-bal-dafrique-absolu.html",
+      "sales": 7,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BYREDO---BAL-D-AFRIQUE-ABSOLU.webp"
+    },
+    {
+      "rank": 9,
+      "name": "Guerlain Spirituese Double Vanille",
+      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
+      "sales": 7,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
+    },
+    {
+      "rank": 10,
       "name": "Les Indemodables Ambre Supreme",
       "url": "https://www.dufteriet.no/2025/08/les-indemodables-ambre-supreme.html",
       "sales": 7,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LES-INDEMODABLES---AMBRE-SUPREME.jpg"
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Argos Triumph Of Bacchus Extrait",
       "url": "https://www.dufteriet.no/2025/08/argos-triumph-of-bacchus-extrait.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-ARGOS---TRIUMPH-OF-BACCHUS-EXTRAIT-v2.webp"
     },
     {
-      "rank": 10,
-      "name": "Byredo Bal D'Afrique Absolu",
-      "url": "https://www.dufteriet.no/2025/11/byredo-bal-dafrique-absolu.html",
-      "sales": 6,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BYREDO---BAL-D-AFRIQUE-ABSOLU.webp"
-    },
-    {
-      "rank": 11,
-      "name": "Guerlain Spirituese Double Vanille",
-      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
-      "sales": 6,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
-    },
-    {
       "rank": 12,
+      "name": "Guerlain L'Homme Idéal Cologne Forte",
+      "url": "https://www.dufteriet.no/2026/01/guerlain-lhomme-ideal-cologne-forte.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---lhomme-ideal-cologne-forte.webp"
+    },
+    {
+      "rank": 13,
       "name": "Guerlain Tobacco Honey",
       "url": "https://www.dufteriet.no/2025/12/guerlain-tobacco-honey.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tobacco-honey.webp"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Louis Vuitton Afternoon Swim",
       "url": "https://www.dufteriet.no/2025/12/louis-vuitton-afternoon-swim.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---afternoon-swim.webp"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Louis Vuitton City Of Stars",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-city-of-stars.html",
       "sales": 6,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---City-Of-Stars.jpg"
     },
     {
-      "rank": 15,
+      "rank": 16,
+      "name": "Louis Vuitton Météore",
+      "url": "https://www.dufteriet.no/2025/08/louis-vuitton-meteore.html",
+      "sales": 6,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Meteore.webp"
+    },
+    {
+      "rank": 17,
       "name": "Bvlgari Tygar",
       "url": "https://www.dufteriet.no/2025/12/bvlgari-tygar.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BVLGARI---TYGAR.jpg"
     },
     {
-      "rank": 16,
-      "name": "Guerlain L'Homme Idéal Cologne Forte",
-      "url": "https://www.dufteriet.no/2026/01/guerlain-lhomme-ideal-cologne-forte.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---lhomme-ideal-cologne-forte.webp"
-    },
-    {
-      "rank": 17,
+      "rank": 18,
       "name": "Guerlain Neroli Plein Sud",
       "url": "https://www.dufteriet.no/2025/11/guerlain-neroli-plein-sud.html",
       "sales": 5,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---NEROLI-PLEIN-SUD.jpg"
-    },
-    {
-      "rank": 18,
-      "name": "Louis Vuitton Météore",
-      "url": "https://www.dufteriet.no/2025/08/louis-vuitton-meteore.html",
-      "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Meteore.webp"
     },
     {
       "rank": 19,
@@ -165,150 +165,150 @@
     },
     {
       "rank": 24,
+      "name": "Creed Aventus",
+      "url": "https://www.dufteriet.no/2025/08/creed-aventus.html",
+      "sales": 3,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CREED---AVENTUS-V2.avif"
+    },
+    {
+      "rank": 25,
       "name": "Dior Leather Oud",
       "url": "https://www.dufteriet.no/2025/11/dior-leather-oud-2018.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/d-dior---leather-oud-v2.jpg"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "Fragrance One - Office for Men",
       "url": "https://www.dufteriet.no/2025/08/fragrance-one-office-for-men.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/F-FRAGRANCE-ONE-%E2%80%93-OFFICE-FOR-MEN.jpg"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "Giorgio Armani Thé Yulong Soie de Nacre",
       "url": "https://www.dufteriet.no/2025/08/giorgio-armani-yulong-soie-de-nacre.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GIORGIO-ARMANI---TH%C3%89-YULONG-SOIE-DE-NACRE.jpg"
     },
     {
-      "rank": 27,
+      "rank": 28,
+      "name": "Guerlain Angelique Noire",
+      "url": "https://www.dufteriet.no/2025/12/guerlain-angelique-noire.html",
+      "sales": 3,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---ANGELIQUE-NOIRE.webp"
+    },
+    {
+      "rank": 29,
       "name": "Guerlain Peche Mirage",
       "url": "https://www.dufteriet.no/2025/12/guerlain-peche-mirage.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---peche-mirage.jpg"
     },
     {
-      "rank": 28,
+      "rank": 30,
       "name": "Houbigant Fougere Royale",
       "url": "https://www.dufteriet.no/2025/08/houbigant-fougere-royale-2010-edp.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/H-HOUBIGANT---FOUGERE-ROYALE-(2010-EDP).jpg"
     },
     {
-      "rank": 29,
+      "rank": 31,
       "name": "Marc-Antoine Barrois Ganymede",
       "url": "https://www.dufteriet.no/2025/08/marc-antoine-barrois-ganymede.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MARC-ANTOINE-BARROIS---GANYMEDE.webp"
     },
     {
-      "rank": 30,
+      "rank": 32,
       "name": "Memo Eau De Memo",
       "url": "https://www.dufteriet.no/2025/11/memo-eau-de-memo.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MEMO---EAU-DE-MEMO.webp"
     },
     {
-      "rank": 31,
+      "rank": 33,
       "name": "Mind Games Blockade",
       "url": "https://www.dufteriet.no/2025/08/mind-games-blockade.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MIND-GAMES---BLOCKADE.webp"
     },
     {
-      "rank": 32,
+      "rank": 34,
       "name": "Pana Dora Aqua De Dora",
       "url": "https://www.dufteriet.no/2025/08/pana-dora-aqua-de-dora.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PANA-DORA---AQUA-DE-DORA.jpeg"
     },
     {
-      "rank": 33,
+      "rank": 35,
       "name": "Tom Ford Tobacco Vanille",
       "url": "https://www.dufteriet.no/2025/08/tom-ford-tobacco-vanille.html",
       "sales": 3,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/T-TOM-FORD---TOBACCO-VANILLE.jpg"
     },
     {
-      "rank": 34,
+      "rank": 36,
       "name": "Adi Ale Van Hai Hui",
       "url": "https://www.dufteriet.no/2025/12/adi-ale-van-hai-hui.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/a-adi-ale-van---hai-hui.jpg"
     },
     {
-      "rank": 35,
+      "rank": 37,
       "name": "Argos Fall of Phaeton",
       "url": "https://www.dufteriet.no/2025/08/argos-fall-of-phaeton.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-ARGOS---Fall-of-Phaeton.webp"
     },
     {
-      "rank": 36,
+      "rank": 38,
       "name": "Chanel Le Lion",
       "url": "https://www.dufteriet.no/2025/10/chanel-le-lion.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CHANEL---LE-LION.jpg"
     },
     {
-      "rank": 37,
-      "name": "Creed Aventus",
-      "url": "https://www.dufteriet.no/2025/08/creed-aventus.html",
-      "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CREED---AVENTUS-V2.avif"
-    },
-    {
-      "rank": 38,
+      "rank": 39,
       "name": "Creed Virgin Island Water",
       "url": "https://www.dufteriet.no/2025/08/creed-virgin-island-water.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CREED---VIRGIN-ISLAND-WATER-V2.avif"
     },
     {
-      "rank": 39,
+      "rank": 40,
       "name": "Dior Tobacolor",
       "url": "https://www.dufteriet.no/2025/08/dior-tobacolor.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/D-DIOR---TOBACOLOR.jpg"
     },
     {
-      "rank": 40,
+      "rank": 41,
       "name": "Ex Nihilo Blue Talisman",
       "url": "https://www.dufteriet.no/2025/08/ex-nihilo-blue-talisman.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/E-EX-NIHILO---BLUE-TALISMAN.jpg"
     },
     {
-      "rank": 41,
+      "rank": 42,
       "name": "Ex Nihilo Blue Talisman Extrait",
       "url": "https://www.dufteriet.no/2026/02/ex-nihilio-blue-talisman-extrait.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/e-ex-nihilo---blue-talisman-extrait.webp"
     },
     {
-      "rank": 42,
+      "rank": 43,
       "name": "Ex Nihilo The Hedonist Eau de Parfum",
       "url": "https://www.dufteriet.no/2025/08/ex-nihilo-hedonist.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/E-EX-NIHILO---THE-HEDONIST.jpg"
     },
     {
-      "rank": 43,
+      "rank": 44,
       "name": "Giardini Di Toscana Bianco Latte",
       "url": "https://www.dufteriet.no/2025/11/giardini-di-toscana-bianco-latte.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GIARDINI-DI-TOSCANA---BIANCO-LATTE.jpeg"
-    },
-    {
-      "rank": 44,
-      "name": "Guerlain Angelique Noire",
-      "url": "https://www.dufteriet.no/2025/12/guerlain-angelique-noire.html",
-      "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---ANGELIQUE-NOIRE.webp"
     },
     {
       "rank": 45,
@@ -396,416 +396,416 @@
     },
     {
       "rank": 57,
+      "name": "Parfums de Marly Layton",
+      "url": "https://www.dufteriet.no/2025/09/parfums-de-marly-layton.html",
+      "sales": 2,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PARFUMS-DE-MARLY---LAYTON.webp"
+    },
+    {
+      "rank": 58,
       "name": "Roja London Elysium Pour Homme PC",
       "url": "https://www.dufteriet.no/2025/08/roja-london-elysium-pour-homme-pc.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/R-ROJA-LONDON---ELYSIUM-POUR-HOMME-PC.jpg"
     },
     {
-      "rank": 58,
+      "rank": 59,
       "name": "Sospiro Il Padrino",
       "url": "https://www.dufteriet.no/2025/08/sospiro-il-padrino.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/S-SOSPIRO---IL-PADRINO.jpg"
     },
     {
-      "rank": 59,
+      "rank": 60,
       "name": "Tom Ford Beau de Jour",
       "url": "https://www.dufteriet.no/2025/12/tom-ford-beau-de-jour.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/T-TOM-FORD---BEAU-DE-JOUR.jpeg"
     },
     {
-      "rank": 60,
+      "rank": 61,
       "name": "Tom Ford Fougere Platine",
       "url": "https://www.dufteriet.no/2025/12/tom-ford-fougere-platine.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/t-tom-ford---fougere-platine.jpg"
     },
     {
-      "rank": 61,
+      "rank": 62,
       "name": "Tom Ford Lost Cherry",
       "url": "https://www.dufteriet.no/2025/11/tom-ford-lost-cherry.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/T-TOM-FORD---LOST-CHERRY.webp"
     },
     {
-      "rank": 62,
+      "rank": 63,
       "name": "Toskovat Empty Wishes Well",
       "url": "https://www.dufteriet.no/2025/11/toskovat-empty-wishes-well.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/T-TOSKOVAT---EMPTY-WISHES-WELL.jpg"
     },
     {
-      "rank": 63,
+      "rank": 64,
       "name": "Widian London Eau de Parfum",
       "url": "https://www.dufteriet.no/2025/08/widian-london-eau-de-parfum.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/W-WIDIAN-LONDON-EAU-DE-PARFUM.jpg"
     },
     {
-      "rank": 64,
+      "rank": 65,
       "name": "Zoologist Beaver Maple Edition",
       "url": "https://www.dufteriet.no/2025/08/zoologist-beaver-maple-edition.html",
       "sales": 2,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/Z-ZOOLOGIST---BEAVER-MAPLE-EDITION-v2.webp"
     },
     {
-      "rank": 65,
+      "rank": 66,
       "name": "Amouage Beach Hut Man",
       "url": "https://www.dufteriet.no/2025/10/amouage-beach-hut-man.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-AMOUAGE---BEACH-HUT-MAN.jpg"
     },
     {
-      "rank": 66,
+      "rank": 67,
       "name": "Amouage Imitation Man",
       "url": "https://www.dufteriet.no/2025/08/amouage-imitation-man.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-AMOUAGE---IMITATION-MAN-v2.webp"
     },
     {
-      "rank": 67,
+      "rank": 68,
       "name": "Amouage Reflection Man",
       "url": "https://www.dufteriet.no/2025/11/amouage-reflection-man.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-AMOUAGE---REFLECTION-MAN.webp"
     },
     {
-      "rank": 68,
+      "rank": 69,
       "name": "Argos La Primavera",
       "url": "https://www.dufteriet.no/2026/01/argos-la-primavera.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/a-argos---la-primavera.webp"
     },
     {
-      "rank": 69,
+      "rank": 70,
       "name": "Argos Neptunes Trident",
       "url": "https://www.dufteriet.no/2025/08/argos-neptunes-trident.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-ARGOS---Neptune%27s-Trident.jpg"
     },
     {
-      "rank": 70,
+      "rank": 71,
       "name": "Caron Pour Un Homme de Caron Le Matin",
       "url": "https://www.dufteriet.no/2025/09/caron-pour-un-homme-de-caron-le-matin_17.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-Caron---Pour-Un-Homme-de-Caron-Le-Matin.jpg"
     },
     {
-      "rank": 71,
+      "rank": 72,
       "name": "Chanel Boy",
       "url": "https://www.dufteriet.no/2025/11/chanel-boy.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CHANEL---BOY.avif"
     },
     {
-      "rank": 72,
+      "rank": 73,
       "name": "Chanel Coromandel EdP",
       "url": "https://www.dufteriet.no/2025/09/chanel-coromandel-edp.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CHANEL---COROMANDEL.avif"
     },
     {
-      "rank": 73,
+      "rank": 74,
       "name": "Chanel Eau de Cologne",
       "url": "https://www.dufteriet.no/2025/09/chanel-eau-de-cologne.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CHANEL---EAU-DE-COLOGNE.jpg"
     },
     {
-      "rank": 74,
+      "rank": 75,
       "name": "Chanel Platinum Egoiste EDT",
       "url": "https://www.dufteriet.no/2025/08/chanel-platinum-egoiste-edt.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CHANEL---PLATINUM-EGOISTE-EDT.jpg"
     },
     {
-      "rank": 75,
+      "rank": 76,
       "name": "City Rhythm 86.41",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-8641.html",
       "sales": 1,
       "img": null
     },
     {
-      "rank": 76,
+      "rank": 77,
       "name": "City Rhythm Manhattan Midnight",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-manhattan-midnight.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---MANHATTAN-MIDNIGHT.jpg"
     },
     {
-      "rank": 77,
+      "rank": 78,
       "name": "City Rhythm Miami",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-miami.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---MIAMI.jpeg"
     },
     {
-      "rank": 78,
+      "rank": 79,
       "name": "City Rhythm Miami Tropical Confessions",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-miami-tropical-confessions.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---MIAMI-TROPICAL-CONFESSIONS.jpg"
     },
     {
-      "rank": 79,
+      "rank": 80,
       "name": "City Rhythm Redline 2654",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-red-line-2654.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---RED-LINE-2654.jpeg"
     },
     {
-      "rank": 80,
+      "rank": 81,
       "name": "City Rhythm St. John",
       "url": "https://www.dufteriet.no/2025/08/city-rhythm-st-john.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CITY-RHYTHM---ST.-JOHN.webp"
     },
     {
-      "rank": 81,
+      "rank": 82,
       "name": "Clive Christian Jump Up And Kiss Me Hedonistic",
       "url": "https://www.dufteriet.no/2025/08/clive-christian-jump-up-and-kiss-me.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CLIVE-CHRISTIAN---JUMP-UP-AND-KISS-ME-HEDONISTIC.jpg"
     },
     {
-      "rank": 82,
+      "rank": 83,
       "name": "Creed Royal Oud",
       "url": "https://www.dufteriet.no/2025/08/creed-royal-oud.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CREED---ROYAL-OUD.jpg"
     },
     {
-      "rank": 83,
+      "rank": 84,
       "name": "Creed Royal Water",
       "url": "https://www.dufteriet.no/2025/08/creed-royal-water.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/C-CREED---ROYAL-WATER-V2.webp"
     },
     {
-      "rank": 84,
+      "rank": 85,
       "name": "Dior Ambre Nuit",
       "url": "https://www.dufteriet.no/2025/12/dior-ambre-nuit.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/d-dior---ambre-nuit.png"
     },
     {
-      "rank": 85,
+      "rank": 86,
       "name": "Dior Gris Dior",
       "url": "https://www.dufteriet.no/2025/08/dior-gris-dior.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/D-DIOR---GRIS-DIOR.jpg"
     },
     {
-      "rank": 86,
+      "rank": 87,
       "name": "Dior Sauvage EDP",
       "url": "https://www.dufteriet.no/2025/08/dior-sauvage-edp.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/d-dior---sauvage-edp-v2.webp"
     },
     {
-      "rank": 87,
+      "rank": 88,
       "name": "Essential Parfums Bois Impérial",
       "url": "https://www.dufteriet.no/2025/08/essential-parfums-bois-imperial.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/E-ESSENTIAL-PARFUMS---BOIS-IMP%C3%89RIAL.jpg"
     },
     {
-      "rank": 88,
+      "rank": 89,
       "name": "Francesca Bianchi Under My Skin",
       "url": "https://www.dufteriet.no/2025/08/francesca-bianchi-under-my-skin.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/F-FRANCESCA-BIANCHI---UNDER-MY-SKIN.jpg"
     },
     {
-      "rank": 89,
+      "rank": 90,
       "name": "Guerlain L'Homme Idéal L'Intense EDP",
       "url": "https://www.dufteriet.no/2025/08/guerlain-lhomme-ideal-lintense-edp.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---L"
     },
     {
-      "rank": 90,
+      "rank": 91,
       "name": "Houbigant Ambre des Abysses",
       "url": "https://www.dufteriet.no/2025/08/houbigant-ambre-des-abysses.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/H-HOUBIGANT---AMBRE-DES-ABYSSES.png"
     },
     {
-      "rank": 91,
+      "rank": 92,
       "name": "Houbigant Duc de Vervins L'Extreme",
       "url": "https://www.dufteriet.no/2025/08/houbigant-duc-de-vervins-lextreme.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/H-HOUBIGANT---DUC-DE-VERVINS-L"
     },
     {
-      "rank": 92,
+      "rank": 93,
       "name": "Initio Parfums Side Effect",
       "url": "https://www.dufteriet.no/2025/08/initio-parfums-side-effect.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/I-INITIO-PARFUMS---SIDE-EFFECT.jpg"
     },
     {
-      "rank": 93,
+      "rank": 94,
       "name": "Kilian Moonlight In Heaven",
       "url": "https://www.dufteriet.no/2026/01/kilian-moonlight-in-heaven.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/k-kilian---moonlight-in-heaven.webp"
     },
     {
-      "rank": 94,
+      "rank": 95,
       "name": "Kilian Smoking Hot",
       "url": "https://www.dufteriet.no/2026/01/kilian-smoking-hot.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/k-kilian---smoking-hot.webp"
     },
     {
-      "rank": 95,
+      "rank": 96,
       "name": "Louis Vuitton Au Hasard",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-au-hasard.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Au-Hasard.webp"
     },
     {
-      "rank": 96,
+      "rank": 97,
       "name": "Louis Vuitton Sun Song (2025)",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-sun-song-2025.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Sun-Song.webp"
     },
     {
-      "rank": 97,
+      "rank": 98,
       "name": "Louis Vuitton Symphony",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-symphony.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Symphony.webp"
     },
     {
-      "rank": 98,
+      "rank": 99,
       "name": "Loumari Aomak",
       "url": "https://www.dufteriet.no/2025/08/loumari-aomak.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUMARI---AOMAK.webp"
     },
     {
-      "rank": 99,
+      "rank": 100,
       "name": "Maison Francis Kurkdjian Masculin Pluriel",
       "url": "https://www.dufteriet.no/2026/01/maison-francis-kurkdjian-masculin.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/m-maison-francis-kurkdjian---masculin-pluriel.webp"
     },
     {
-      "rank": 100,
+      "rank": 101,
       "name": "Maison Martin Margiela Jazz Club",
       "url": "https://www.dufteriet.no/2025/08/maison-margiela-jazz-club.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MAISON-MARGIELA-JAZZ-CLUB.webp"
     },
     {
-      "rank": 101,
+      "rank": 102,
       "name": "MDCI Parfums Invasion Barbare",
       "url": "https://www.dufteriet.no/2025/11/mdci-parfums-invasion-barbare.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MDCI-PARFUMS---INVASION-BARBARE.jpg"
     },
     {
-      "rank": 102,
+      "rank": 103,
       "name": "Memo Russian Leather",
       "url": "https://www.dufteriet.no/2025/08/memo-russian-leather.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/M-MEMO---RUSSIAN-LEATHER.jpg"
     },
     {
-      "rank": 103,
+      "rank": 104,
       "name": "Nishane Ambra Calabria",
       "url": "https://www.dufteriet.no/2025/09/nishane-ambra-calabria.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE---AMBRE-CALABRIA.jpg"
     },
     {
-      "rank": 104,
+      "rank": 105,
       "name": "Nishane Hacivat",
       "url": "https://www.dufteriet.no/2025/09/nishane-hacivat.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE-HACIVAT.webp"
     },
     {
-      "rank": 105,
+      "rank": 106,
       "name": "Nishane Mana",
       "url": "https://www.dufteriet.no/2025/08/nishane-mana.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE---MANA-v2.webp"
     },
     {
-      "rank": 106,
+      "rank": 107,
       "name": "Nishane Wulong Cha X",
       "url": "https://www.dufteriet.no/2025/08/nishane-wulong-cha-x.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE---WULONG-CHA-X.webp"
     },
     {
-      "rank": 107,
+      "rank": 108,
       "name": "Nishane Zenne",
       "url": "https://www.dufteriet.no/2025/08/nishane-zenne.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NISHANE---ZENNE.jpg"
     },
     {
-      "rank": 108,
+      "rank": 109,
       "name": "Nobile 1942 Il Capriccio del Maestro",
       "url": "https://www.dufteriet.no/2025/08/nobile-1942-il-capriccio-del-maestro.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/N-NOBILE-1942---IL-CAPRICCIO-DEL-MAESTRO.jpg"
     },
     {
-      "rank": 109,
+      "rank": 110,
       "name": "Ormonde Jayne Nawab of Oudh Intensivo",
       "url": "https://www.dufteriet.no/2025/09/ormonde-jayne-nawab-of-oudh-intensivo.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/O-ORMONDE-JAYNE---NAWAB-OF-OUDH-INTENSIVO.webp"
     },
     {
-      "rank": 110,
+      "rank": 111,
       "name": "Orto Parisi Stercus",
       "url": "https://www.dufteriet.no/2025/08/orto-parisi-stercus.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/O-ORTO-PARISI---STERCUS.jpg"
     },
     {
-      "rank": 111,
+      "rank": 112,
       "name": "Pana Dora Opuluxe",
       "url": "https://www.dufteriet.no/2025/08/pana-dora-opuluxe.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PANA-DORA---OPULUXE.avif"
     },
     {
-      "rank": 112,
+      "rank": 113,
       "name": "Pana Dora Swedish Wood Extrait",
       "url": "https://www.dufteriet.no/2025/08/pana-dora-swedish-wood-extrait.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PANA-DORA---SWEDISH-WOOD-EXTRAIT.jpg"
     },
     {
-      "rank": 113,
+      "rank": 114,
       "name": "Parfums de Marly Darley",
       "url": "https://www.dufteriet.no/2025/08/parfums-de-marly-darley.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PARFUMS-DE-MARLY---DARLEY.jpg"
     },
     {
-      "rank": 114,
+      "rank": 115,
       "name": "Parfums de Marly Herod",
       "url": "https://www.dufteriet.no/2026/01/parfums-de-marly-herod.html",
       "sales": 1,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/p-parfums-de-marly---herod.webp"
-    },
-    {
-      "rank": 115,
-      "name": "Parfums de Marly Layton",
-      "url": "https://www.dufteriet.no/2025/09/parfums-de-marly-layton.html",
-      "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/P-PARFUMS-DE-MARLY---LAYTON.webp"
     },
     {
       "rank": 116,
@@ -1723,7 +1723,7 @@
       "rank": 1,
       "name": "Louis Vuitton Imagination",
       "url": "https://www.dufteriet.no/2025/08/louis-vuitton-imagination.html",
-      "sales": 15,
+      "sales": 17,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LOUIS-VUITTON---Imagination.jpg"
     },
     {
@@ -1770,24 +1770,24 @@
     },
     {
       "rank": 8,
+      "name": "Byredo Bal D'Afrique Absolu",
+      "url": "https://www.dufteriet.no/2025/11/byredo-bal-dafrique-absolu.html",
+      "sales": 7,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BYREDO---BAL-D-AFRIQUE-ABSOLU.webp"
+    },
+    {
+      "rank": 9,
+      "name": "Guerlain Spirituese Double Vanille",
+      "url": "https://www.dufteriet.no/2025/08/guerlain-spiritueuse-double-vanille.html",
+      "sales": 7,
+      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/G-GUERLAIN---SPIRITUEUSE-DOUBLE-VANILLE.jpg"
+    },
+    {
+      "rank": 10,
       "name": "Les Indemodables Ambre Supreme",
       "url": "https://www.dufteriet.no/2025/08/les-indemodables-ambre-supreme.html",
       "sales": 7,
       "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/L-LES-INDEMODABLES---AMBRE-SUPREME.jpg"
-    },
-    {
-      "rank": 9,
-      "name": "Argos Triumph Of Bacchus Extrait",
-      "url": "https://www.dufteriet.no/2025/08/argos-triumph-of-bacchus-extrait.html",
-      "sales": 6,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/A-ARGOS---TRIUMPH-OF-BACCHUS-EXTRAIT-v2.webp"
-    },
-    {
-      "rank": 10,
-      "name": "Byredo Bal D'Afrique Absolu",
-      "url": "https://www.dufteriet.no/2025/11/byredo-bal-dafrique-absolu.html",
-      "sales": 6,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/B-BYREDO---BAL-D-AFRIQUE-ABSOLU.webp"
     }
   ]
 }
