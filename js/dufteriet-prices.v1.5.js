@@ -9,7 +9,7 @@
 
 /** ========= KONFIG ========= **/
 const PRISDATA_JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/data/prisdata.json"; // (valgfri) legg filen her for 100% stabil fetch
-const PRISDATA_HTML_URL = "https://www.dufteriet.no/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
+const PRISDATA_HTML_URL = "https://www.dufteriet.blogspot.com/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
 const FETCH_TIMEOUT_MS  = 12000;
 
 /** ========= CSS (en gang per side) ========= **/
@@ -136,7 +136,7 @@ function renderBox(host, items, productName){
 
   const footer=c("div","buy-footer");
   const a=c("a","cart-btn");
-  a.href="https://www.dufteriet.no/p/fork-bestilling.html";
+  a.href="https://www.dufteriet.blogspot.com/p/fork-bestilling.html";
   a.textContent="🛒 Vis handlekurv";
   footer.appendChild(a);
 
@@ -158,7 +158,7 @@ function renderSkeleton(host){
         <li class="price-skel skeleton"></li>
       </ul></div>
       <div class="controls"><label>Laster …</label></div>
-      <div class="buy-footer"><a class="cart-btn" href="https://www.dufteriet.no/p/fork-bestilling.html">🛒 Vis handlekurv</a></div>
+      <div class="buy-footer"><a class="cart-btn" href="https://www.dufteriet.blogspot.com/p/fork-bestilling.html">🛒 Vis handlekurv</a></div>
     </div></div>
   `;
 }
