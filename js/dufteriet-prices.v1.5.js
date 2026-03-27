@@ -9,7 +9,7 @@
 
 /** ========= KONFIG ========= **/
 const PRISDATA_JSON_URL = "https://cdn.jsdelivr.net/gh/dufteriet/www.dufteriet.no@main/data/prisdata.json"; // (valgfri) legg filen her for 100% stabil fetch
-const PRISDATA_HTML_URL = "https://www.dufteriet.blogspot.com/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
+const PRISDATA_HTML_URL = "https://dufteriet.blogspot.com/p/prisdata.html?m=0"; // stabil desktop-variant på Blogger
 const FETCH_TIMEOUT_MS  = 12000;
 
 /** ========= CSS (en gang per side) ========= **/
