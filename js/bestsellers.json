@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04T02:03:02.540Z",
+  "updatedAt": "2026-04-05T02:03:20.703Z",
   "count": 255,
   "items": [
     {
@@ -147,7 +147,7 @@
       "name": "Ex Nihilo Blue Talisman Extrait",
       "url": "https://www.dufteriet.no/2026/02/ex-nihilio-blue-talisman-extrait.html",
       "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/e-ex-nihilo---blue-talisman-extrait.webp"
+      "img": null
     },
     {
       "rank": 22,
@@ -378,7 +378,7 @@
       "name": "Argos La Primavera",
       "url": "https://www.dufteriet.no/2026/01/argos-la-primavera.html",
       "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/a-argos---la-primavera.webp"
+      "img": null
     },
     {
       "rank": 55,
@@ -455,7 +455,7 @@
       "name": "Kilian Smoking Hot",
       "url": "https://www.dufteriet.no/2026/01/kilian-smoking-hot.html",
       "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/k-kilian---smoking-hot.webp"
+      "img": null
     },
     {
       "rank": 66,
@@ -539,7 +539,7 @@
       "name": "Parfums de Marly Herod",
       "url": "https://www.dufteriet.no/2026/01/parfums-de-marly-herod.html",
       "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/p-parfums-de-marly---herod.webp"
+      "img": null
     },
     {
       "rank": 78,
@@ -826,7 +826,7 @@
       "name": "Kilian Moonlight In Heaven",
       "url": "https://www.dufteriet.no/2026/01/kilian-moonlight-in-heaven.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/k-kilian---moonlight-in-heaven.webp"
+      "img": null
     },
     {
       "rank": 119,
