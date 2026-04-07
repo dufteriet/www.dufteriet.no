@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-06T02:03:04.043Z",
+  "updatedAt": "2026-04-07T02:03:17.815Z",
   "count": 255,
   "items": [
     {
@@ -490,7 +490,7 @@
       "name": "Maison Francis Kurkdjian Grand Soir",
       "url": "https://www.dufteriet.no/2026/03/maison-francis-kurkdjian-grand-soir.html",
       "sales": 2,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/m-maison-francis-kurkdjian---grand-soir.webp"
+      "img": null
     },
     {
       "rank": 71,
@@ -784,7 +784,7 @@
       "name": "Guerlain Tonka Imperiale",
       "url": "https://www.dufteriet.no/2026/03/guerlain-tonka-imperiale.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---tonka-imperiale.jpg"
+      "img": null
     },
     {
       "rank": 113,
@@ -833,7 +833,7 @@
       "name": "Louis Vuitton Turbulences",
       "url": "https://www.dufteriet.no/2026/03/louis-vuitton-turbulences.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/l-louis-vuitton---turbulences.webp"
+      "img": null
     },
     {
       "rank": 120,
