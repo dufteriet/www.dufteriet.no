@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11T02:03:03.199Z",
+  "updatedAt": "2026-04-12T02:03:09.540Z",
   "count": 255,
   "items": [
     {
@@ -154,7 +154,7 @@
       "name": "Guerlain Neroli Outrenoir",
       "url": "https://www.dufteriet.no/2026/02/guerlain-neroli-outrenoir.html",
       "sales": 5,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/g-guerlain---neroli-outrenoir.avif"
+      "img": null
     },
     {
       "rank": 23,
@@ -315,7 +315,7 @@
       "name": "Maison Francis Kurkdjian Baccarat Rouge 540 extrait",
       "url": "https://www.dufteriet.no/2026/02/maison-francis-kurkdjian-baccarat-rouge.html",
       "sales": 3,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/m-maison-francis-kurkdjian---baccarat-rouge-540-extrait.webp"
+      "img": null
     },
     {
       "rank": 46,
