@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16T02:03:02.648Z",
+  "updatedAt": "2026-04-17T02:03:09.997Z",
   "count": 255,
   "items": [
     {
@@ -756,7 +756,7 @@
       "name": "Dries Van Noten - Soie Malaquais",
       "url": "https://www.dufteriet.no/2026/01/dries-van-noten-soie-malaquais.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/d-dries-van-noten---soie-malaquais.webp"
+      "img": null
     },
     {
       "rank": 109,
@@ -812,7 +812,7 @@
       "name": "Issey Miyake - L'Eau d'Issey pour Homme Intense",
       "url": "https://www.dufteriet.no/2026/03/issey-miyake-leau-dissey-pour-homme.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/issey-miyakei-issey-miyake---l-eau-d-issey-pour-homme-intense.jpg"
+      "img": null
     },
     {
       "rank": 117,
@@ -945,7 +945,7 @@
       "name": "Parfums de Marly Carios",
       "url": "https://www.dufteriet.no/2026/01/parfums-de-marly-carios.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/p-parfums-de-marly---carios.webp"
+      "img": null
     },
     {
       "rank": 136,
