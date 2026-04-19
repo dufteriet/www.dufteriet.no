@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T02:03:02.627Z",
+  "updatedAt": "2026-04-19T02:03:03.924Z",
   "count": 255,
   "items": [
     {
@@ -966,7 +966,7 @@
       "name": "Penhaligon's Halfeti",
       "url": "https://www.dufteriet.no/2026/01/penhaligons-halfeti.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/p-penhaligons---halfeti.jpg"
+      "img": null
     },
     {
       "rank": 139,
