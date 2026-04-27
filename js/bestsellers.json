@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T02:03:02.756Z",
+  "updatedAt": "2026-04-27T02:03:12.718Z",
   "count": 255,
   "items": [
     {
@@ -770,7 +770,7 @@
       "name": "Frederic Malle - Musc Ravageur",
       "url": "https://www.dufteriet.no/2026/02/frederic-malle-musc-ravageur.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/f-frederic-malle---musc-ravageur.webp"
+      "img": null
     },
     {
       "rank": 111,
@@ -819,7 +819,7 @@
       "name": "Jo Malone - Pomegranate Noir Cologne",
       "url": "https://www.dufteriet.no/2026/03/jo-malone-pomegranate-noir-cologne.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/j-jo-malone---pomegranate-noir-cologne.jpg"
+      "img": null
     },
     {
       "rank": 118,
@@ -924,7 +924,7 @@
       "name": "Orto Parisi Seminalis",
       "url": "https://www.dufteriet.no/2026/03/orto-parisi-seminalis.html",
       "sales": 1,
-      "img": "https://raw.githubusercontent.com/dufteriet/www.dufteriet.no/refs/heads/main/pictures/o-orto-parisi---seminalis-v2.webp"
+      "img": null
     },
     {
       "rank": 133,
